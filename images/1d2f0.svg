@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg fill-opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="black" stroke-linecap="square" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="1" fill="black" stroke-dasharray="none" font-weight="normal" stroke-width="1" xmlns="http://www.w3.org/2000/svg" font-family="'Dialog'" font-style="normal" stroke-linejoin="miter" font-size="12" stroke-dashoffset="0" image-rendering="auto">
+  <!--Unicode Character 'MAYAN NUMERAL SIXTEEN' (U+1D2F0)-->
+  <defs id="genericDefs"/>
+  <g>
+    <g>
+      <path d="M164.5312 170.7188 Q164.5312 179.1562 158.4844 185.2031 Q152.4375 191.25 144 191.25 Q135.5625 191.25 129.5156 185.2031 Q123.4688 179.1562 123.4688 170.7188 Q123.4688 162.2812 129.5156 156.1641 Q135.5625 150.0469 144 150.0469 Q152.4375 150.0469 158.4844 156.1641 Q164.5312 162.2812 164.5312 170.7188 ZM242.4375 240.4688 L45.5625 240.4688 L45.5625 213.4688 L242.4375 213.4688 L242.4375 240.4688 ZM242.4375 296.7188 L45.5625 296.7188 L45.5625 269.7188 L242.4375 269.7188 L242.4375 296.7188 ZM242.4375 352.9688 L45.5625 352.9688 L45.5625 325.9688 L242.4375 325.9688 L242.4375 352.9688 Z" stroke="none"/>
+    </g>
+  </g>
+</svg>
