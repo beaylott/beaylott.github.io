@@ -11,7 +11,8 @@ header_html = """
 <header>
     <nav>
         <ul>
-            <li><a href="./index.html">Home</a> <a class="active" href="./about.html">About</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a class="active" href="./about.html">About</a></li>
         </ul>
     </nav>
 </header>
