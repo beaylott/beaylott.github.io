@@ -8,16 +8,18 @@ import markdown
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 header_html = """
-<nav>
-    <div class="topnav">
-        <a href="./index.html">Home</a> <a class="active" href="./about.html">About</a>
-    </div>
-</nav>
+<header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a> <a class="active" href="./about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
 """
 
 footer_html = f'''
 <footer>
-    <p>© {datetime.datetime.now().strftime("%Y")} 1d2f0.info. Last updated: {datetime.datetime.now().strftime("%d/%m/%Y")}</p>
+    <p>©{datetime.datetime.now().strftime("%Y")} Ben Aylott. Last updated: {datetime.datetime.now().strftime("%d/%m/%Y")} | CSS by <a href="https://picocss.com">Pico</a></p>
 </footer>
 '''
 
@@ -69,7 +71,7 @@ def generate_about():
 if __name__ == "__main__":    
     shutil.rmtree('./output',ignore_errors=True)
     os.mkdir("./output")
-    shutil.copyfile('html/theme.css','output/theme.css')
+    shutil.copyfile('html/pico.classless.min.css','output/pico.classless.min.css')
     generate_about()
     posts=generate_posts()
     generate_index(posts)
