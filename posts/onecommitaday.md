@@ -2,7 +2,7 @@ title: One commit a day
 date: 2025-01-03
 tags: ["lifehacks"]
 author: "Ben Aylott"
-draft: true
+draft: false
 
 # One commit a day!
 
