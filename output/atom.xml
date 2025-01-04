@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>1d2f0.info</title>
+	<link href="https://1d2f0.info/atom.xml" rel="self" />
+	<updated>2025-01-04T21:27:28Z</updated>
+	<author>
+		<name>Ben Aylott</name>
+	</author>
+	<id>https://1d2f0.info/</id>
+	<entry>
+		<title>One commit a day</title>
+		<link href="https://1d2f0.info/onecommitaday.html" />
+		<updated>2025-01-03T00:00:00Z</updated>
+		<id>https://1d2f0.info/onecommitaday.html/</id>
+	</entry>
+</feed>
