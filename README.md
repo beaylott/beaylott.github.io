@@ -11,3 +11,7 @@ pip install -r requirements.txt
 ```bash
 python generate.py
 ```
+
+## TODO
+* Generate output in CI.
+* Validate HTML/Atom.
