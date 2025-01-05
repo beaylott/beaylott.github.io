@@ -21,8 +21,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-
-
 jobs:
   deploy:
     environment:
@@ -36,13 +34,13 @@ jobs:
         uses: actions/configure-pages@v5
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
+          python-version: "3.13"
       - run: pip install -r requirements.txt
       - run: python generate.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'output'
+          path: "output"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
