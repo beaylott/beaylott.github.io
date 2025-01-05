@@ -126,6 +126,7 @@ if __name__ == "__main__":
     shutil.copyfile(
         "third-party/pico.classless.min.css", "output/pico.classless.min.css"
     )
+    shutil.copyfile("habits.png", "output/habits.png")
     generate_about()
     posts = generate_posts()
     generate_posts_feed_atom(posts)

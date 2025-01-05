@@ -1,3 +1,5 @@
 markdown
 Jinja2
 pre-commit
+july @ git+https://github.com/thoellrich/july.git@fix-mpl.cbook.MatplotlibDepreciationWarning
+pandas
