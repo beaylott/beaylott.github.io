@@ -93,27 +93,35 @@ def generate_posts_feed_atom(posts):
     link = ET.SubElement(xml, "link")
     link.set("href", "https://1d2f0.info/atom.xml")
     link.set("rel", "self")
-    updated = ET.SubElement(xml, "updated")
-    updated.text = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+    updated_feed = ET.SubElement(xml, "updated")
+
     author = ET.SubElement(xml, "author")
     name = ET.SubElement(author, "name")
     name.text = "Ben Aylott"
     id = ET.SubElement(xml, "id")
     id.text = "https://1d2f0.info/"
 
+    latest_post_date = None
+
     for post in posts:
+        post_date = datetime.datetime.strptime(post["date"], "%Y-%m-%d")
         entry = ET.SubElement(xml, "entry")
         title = ET.SubElement(entry, "title")
         title.text = post["title"]
         link = ET.SubElement(entry, "link")
         link.set("href", "https://1d2f0.info/" + post["url"])
         updated = ET.SubElement(entry, "updated")
-        updated.text = datetime.datetime.strptime(post["date"], "%Y-%m-%d").strftime(
-            "%Y-%m-%dT%H:%M:%SZ"
-        )
+        updated.text = post_date.strftime("%Y-%m-%dT%H:%M:%SZ")
         id = ET.SubElement(entry, "id")
         id.text = "https://1d2f0.info/" + post["url"] + "/"
-    print(ET.tostring(xml))
+
+        if latest_post_date is None:
+            latest_post_date = post_date
+        elif latest_post_date < post_date:
+            latest_post_date = post_date
+
+    updated_feed.text = latest_post_date.strftime("%Y-%m-%dT%H:%M:%SZ")
+
     et = ET.ElementTree()
     et._setroot(xml)
     ET.indent(et, space="\t", level=0)
