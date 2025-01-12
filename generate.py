@@ -27,7 +27,7 @@ footer_html = f"""
 
 templateLoader = FileSystemLoader(searchpath="./")
 env = Environment(loader=templateLoader)
-md = markdown.Markdown(extensions=["meta"])
+md = markdown.Markdown(extensions=["meta", "fenced_code"])
 
 
 def generate_posts():
@@ -44,7 +44,11 @@ def generate_posts():
                 print("ERROR: No title found in", mdfile)
                 continue
 
-            filename = f"{md.Meta['title'][0].replace(' ', '').lower()}.html"
+            if "filename" in md.Meta:
+                filename = md.Meta["filename"][0]
+            else:
+                filename = f"{md.Meta['title'][0].replace(' ', '').lower()}.html"
+
             with open(f"output/{filename}", "w") as f:
                 f.write(
                     posts_template.render(

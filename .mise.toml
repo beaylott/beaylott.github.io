@@ -2,4 +2,4 @@
 python = "3.13"
 
 [env]
-_.python.venv = { path = ".venv", create = true }
+_.python.venv = { path = "{{env.HOME}}/.cache/venv{{config_root}}", create = true }
