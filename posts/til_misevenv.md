@@ -7,7 +7,7 @@ draft: false
 
 # TIL: (almost) auto venv like pyenv-virtualenv in mise
 
-[mise](https://mise.jdx.dev/templates.html#variables) provides some instructions to auto-configure the python venv. This didn't work quite how I was used to with pyenv-virtualenv where the venv would be placed in a separate cache folder in $HOME.
+[mise](https://mise.jdx.dev) provides some instructions to auto-configure the python venv. This didn't work quite how I was used to with pyenv-virtualenv where the venv would be placed in a separate cache folder in $HOME.
 
 This is actually possible in mise using the below config using [Template Variables](https://mise.jdx.dev/templates.html#variables) as below:
 
