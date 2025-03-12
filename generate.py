@@ -138,7 +138,6 @@ if __name__ == "__main__":
     shutil.copyfile(
         "third-party/pico.classless.min.css", "output/pico.classless.min.css"
     )
-    shutil.copyfile("habits/habits2025.png", "output/habits.png")
     shutil.copyfile("html/favicon.ico", "output/favicon.ico")
     generate_about()
     posts = generate_posts()
