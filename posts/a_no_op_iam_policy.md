@@ -1,8 +1,8 @@
-title: An empty IAM policy?
+title: A no-op IAM policy?
 date: 2025-03-12
 tags: ["til","aws","iam"]
 author: "Ben Aylott"
-filename: an_empty_iam_policy.html
+filename: a_no_op_iam_policy.html
 draft: false
 
 # A no-op IAM policy?
